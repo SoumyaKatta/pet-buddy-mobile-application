@@ -1,4 +1,4 @@
-import {Text, View} from 'react-native';
+import {Text, TextInput, View} from 'react-native';
 
 export function Login() {
   return (
@@ -7,6 +7,10 @@ export function Login() {
         <Text style={{fontSize: 30, fontWeight: 'bold', color: '#32cd32'}}>
           PetBuddy!
         </Text>
+        <TextInput
+          style={{height: 45, width: 300, borderWidth: 1, marginTop: 30,padding:10,fontSize:20,fontWeight:'bold',borderRadius:10}}
+          placeholder="Username"
+        />
       </View>
     </>
   );
