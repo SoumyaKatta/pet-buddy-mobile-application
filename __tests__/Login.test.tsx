@@ -7,7 +7,7 @@ describe('should render the login screen', () => {
     expect(getByText('PetBuddy!')).toBeDefined();
   });
   it('should check the Username label',()=>{
-    const {getByText} = render(<Login />);
-    expect(getByText('Username')).toBeDefined();
+    const {getByPlaceholderText} = render(<Login />);
+    expect(getByPlaceholderText('Username')).toBeDefined();
   })
 });
