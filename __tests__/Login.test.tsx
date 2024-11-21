@@ -6,8 +6,12 @@ describe('should render the login screen', () => {
     const {getByText} = render(<Login />);
     expect(getByText('PetBuddy!')).toBeDefined();
   });
-  it('should check the Username label',()=>{
+  it('should check the Username placeholder',()=>{
     const {getByPlaceholderText} = render(<Login />);
     expect(getByPlaceholderText('Username')).toBeDefined();
+  })
+  it('should check the Password placeholder',()=>{
+    const {getByPlaceholderText} = render(<Login />);
+    expect(getByPlaceholderText('Password')).toBeDefined();
   })
 });
