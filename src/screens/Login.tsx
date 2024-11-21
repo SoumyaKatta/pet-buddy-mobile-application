@@ -11,6 +11,10 @@ export function Login() {
           style={{height: 45, width: 300, borderWidth: 1, marginTop: 30,padding:10,fontSize:20,fontWeight:'bold',borderRadius:10}}
           placeholder="Username"
         />
+        <TextInput
+          style={{height: 45, width: 300, borderWidth: 1, marginTop: 30,padding:10,fontSize:20,fontWeight:'bold',borderRadius:10}}
+          placeholder="Password"
+        />
       </View>
     </>
   );
