@@ -18,7 +18,8 @@ export function Welcome() {
           source={require('../../assets/images/pet.jpg')}
           resizeMode="stretch">
           <View style={styles.boxContainer}>
-             <Text>Hey! Welcome</Text>
+            <Text style={{fontSize: 20,fontWeight:'bold', fontFamily:'Roboto'}}>Hey! Welcome</Text>
+            <Text testID='pet-text' style={{fontSize:18,flexWrap:'wrap',fontWeight:500,color:"grey"}}>while you sit and stay - we'll go and play</Text>
           </View>
         </ImageBackground>
       </View>
@@ -44,6 +45,11 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 30,
     position: 'absolute',
     top: screenHeight / 1.4,
-    justifyContent:'center',
-    alignItems:'center'}
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    paddingTop: 40,
+    gap:10
+  },
 });
