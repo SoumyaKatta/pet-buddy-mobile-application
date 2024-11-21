@@ -1,8 +1,10 @@
 import {
+    Button,
   Dimensions,
   ImageBackground,
   StyleSheet,
   Text,
+  TouchableOpacity,
   View,
 } from 'react-native';
 
@@ -20,6 +22,10 @@ export function Welcome() {
           <View style={styles.boxContainer}>
             <Text style={{fontSize: 20,fontWeight:'bold', fontFamily:'Roboto'}}>Hey! Welcome</Text>
             <Text testID='pet-text' style={{fontSize:18,flexWrap:'wrap',fontWeight:500,color:"grey"}}>while you sit and stay - we'll go and play</Text>
+            <TouchableOpacity style={{display:'flex', flexDirection:'row',borderColor:'grey', borderStyle:"solid", padding:8,width:300,justifyContent:"space-around",backgroundColor:"#32cd32", borderRadius:10,marginTop:20,alignItems:'center'}}>
+                <Text style={{fontSize:20, fontWeight:"bold",color:"white"}}>Get Started</Text>
+                <Text style={{fontSize:25, fontWeight:"bold",color:"white"}}>{'>'} </Text>
+            </TouchableOpacity>
           </View>
         </ImageBackground>
       </View>
