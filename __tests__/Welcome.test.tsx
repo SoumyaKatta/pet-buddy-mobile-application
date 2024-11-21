@@ -6,4 +6,8 @@ describe("Should render the welcome screen",()=>{
         const {getByTestId} = render(<Welcome/>)
         expect(getByTestId('background-image')).toBeTruthy();
     })
+    it('should check whether the `Hey!Welocme` text is present on the screen or not',()=>{
+        const {getByText} = render(<Welcome/>)
+        expect(getByText('Hey! Welcome')).toBeTruthy();
+    })
 })
