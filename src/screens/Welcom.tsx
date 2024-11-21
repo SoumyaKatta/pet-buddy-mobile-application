@@ -1,5 +1,4 @@
 import {
-    Button,
   Dimensions,
   ImageBackground,
   StyleSheet,
@@ -20,11 +19,16 @@ export function Welcome() {
           source={require('../../assets/images/pet.jpg')}
           resizeMode="stretch">
           <View style={styles.boxContainer}>
-            <Text style={{fontSize: 20,fontWeight:'bold', fontFamily:'Roboto'}}>Hey! Welcome</Text>
-            <Text testID='pet-text' style={{fontSize:18,flexWrap:'wrap',fontWeight:500,color:"grey"}}>while you sit and stay - we'll go and play</Text>
-            <TouchableOpacity style={{display:'flex', flexDirection:'row',borderColor:'grey', borderStyle:"solid", padding:8,width:300,justifyContent:"space-around",backgroundColor:"#32cd32", borderRadius:10,marginTop:20,alignItems:'center'}}>
-                <Text style={{fontSize:20, fontWeight:"bold",color:"white"}}>Get Started</Text>
-                <Text style={{fontSize:25, fontWeight:"bold",color:"white"}}>{'>'} </Text>
+            <Text
+              style={{fontSize: 20, fontWeight: 'bold', fontFamily: 'Roboto'}}>
+              Hey! Welcome
+            </Text>
+            <Text testID="pet-text" style={styles.Text}>
+              while you sit and stay - we'll go and play
+            </Text>
+            <TouchableOpacity style={styles.getStartedButton}>
+              <Text style={styles.getStartedText}>Get Started</Text>
+              <Text style={styles.getStartedText}>{'>'} </Text>
             </TouchableOpacity>
           </View>
         </ImageBackground>
@@ -56,6 +60,26 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'center',
     paddingTop: 40,
-    gap:10
+    gap: 10,
   },
+  getStartedButton: {
+    display: 'flex',
+    flexDirection: 'row',
+    borderColor: 'grey',
+    borderStyle: 'solid',
+    padding: 8,
+    width: 300,
+    justifyContent: 'space-around',
+    backgroundColor: '#32cd32',
+    borderRadius: 10,
+    marginTop: 20,
+    alignItems: 'center',
+  },
+  Text: {
+    fontSize: 18,
+    flexWrap: 'wrap',
+    fontWeight: 500,
+    color: 'grey',
+  },
+  getStartedText: {fontSize: 20, fontWeight: 'bold', color: 'white'},
 });
