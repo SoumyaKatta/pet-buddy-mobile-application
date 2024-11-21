@@ -10,4 +10,8 @@ describe("Should render the welcome screen",()=>{
         const {getByText} = render(<Welcome/>)
         expect(getByText('Hey! Welcome')).toBeTruthy();
     })
+    it("should check whether text is present or not",()=>{
+        const {getByTestId} = render(<Welcome/>)
+        expect(getByTestId('pet-text')).toBeTruthy();
+    })
 })
