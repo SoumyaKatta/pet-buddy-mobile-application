@@ -14,4 +14,8 @@ describe('should render the login screen', () => {
     const {getByPlaceholderText} = render(<Login />);
     expect(getByPlaceholderText('Password')).toBeDefined();
   })
+  it("should check the Login button text",()=>{
+     const{getByText} = render(<Login/>)
+     expect(getByText('Login')).toBeDefined();
+  })
 });
