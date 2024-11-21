@@ -1,4 +1,4 @@
-import {Text, TextInput, TouchableOpacity, View} from 'react-native';
+import {Button, Text, TextInput, TouchableOpacity, View} from 'react-native';
 
 export function Login() {
   return (
@@ -40,12 +40,22 @@ export function Login() {
             marginTop: 50,
             padding: 10,
             borderRadius: 10,
-            justifyContent:'center',
-            alignItems:'center',
-            backgroundColor:'#32cd32',
+            justifyContent: 'center',
+            alignItems: 'center',
+            backgroundColor: '#32cd32',
           }}>
-          <Text style={{color:'white', fontSize:30, fontWeight:"bold"}}>Login</Text>
+          <Text style={{color: 'white', fontSize: 30, fontWeight: 'bold'}}>
+            Login
+          </Text>
         </TouchableOpacity>
+        <View style={{display: 'flex', flexDirection: 'row', marginTop: 20}}>
+          <Text style={{fontSize: 19, color: '#32cd32'}}>
+            Don't have an account?
+          </Text>
+          <TouchableOpacity>
+            <Text style={{fontSize: 19, color: '#32cd32'}}> Register</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </>
   );
