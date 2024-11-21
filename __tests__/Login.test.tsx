@@ -18,4 +18,12 @@ describe('should render the login screen', () => {
      const{getByText} = render(<Login/>)
      expect(getByText('Login')).toBeDefined();
   })
+  it("should check the text element",()=>{
+    const{getByText} = render(<Login/>)
+    expect(getByText(`Don't have an account?`)).toBeDefined();
+ })
+ it("should check the Register text element",()=>{
+    const{getByText} = render(<Login/>)
+    expect(getByText(`Register`)).toBeDefined();
+ })
 });
