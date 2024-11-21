@@ -14,4 +14,8 @@ describe("Should render the welcome screen",()=>{
         const {getByTestId} = render(<Welcome/>)
         expect(getByTestId('pet-text')).toBeTruthy();
     })
+    it("should check the Get started button",()=>{
+        const {getByText} = render(<Welcome/>)
+        expect(getByText('Get Started')).toBeTruthy();
+    })
 })
